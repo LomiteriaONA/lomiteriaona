@@ -28,9 +28,6 @@ header .logo img{
     transition: all 0.3s;
 }
 
-header .logo img:hover{
-    
-}
 
 .cuerpo_inicio{
     display: grid;
