@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    font-family:'Nunito';
+    margin:0;
+    padding:0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+body{
+    padding-top:80px;
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background: rgb(155, 155, 155);
+}
+
+header .logo img{
+    width: 90px;
+    height: 80px;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.1);
+}
+
+.cuerpo_inicio{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+}
+
+header{
+    display: block;
+    position:fixed;
+    width:100%;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background: rgb(179, 57, 57);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    column-gap:1.2rem;
+}
+.navbar span{
+    font-family: nunito;
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+header .navbar li:hover{
+    transform: scale(1.1);
+}
+.navbar a{
+    color: black;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+header .navbar li span:hover{
+    color:#ffbc0e;
+}
+.inicio .texto-inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    top:45px;
+    padding:0 100px;
+}
+
+.inicio .texto-inicio img{
+    aspect-ratio: 629/582;
+    height: 350px;
+    width:500px;
+}
+
+.inicio .texto-inicio h1{
+    font-size:60px;
+    position:relative;
+    font-size:60px;
+    top:-10px;
+    left:10px;
+}
+
+.inicio .texto-inicio h1 span{
+    margin-left:15px;
+    color:red;
+    font-family:mv boli;
+    line-height: 22px;
+    font-size:70px;
+}
+
+main p{
+    width: 450px;
+    text-align: justify;
+    position:relative;
+    left:150px;
+    bottom:50px;
+    line-height: 22px;
+}
+main .ordenar-boton{
+    background: #fac031;
+    position:relative;
+    left:150px;
+    bottom:30px;
+    width: 170px;
+    cursor:pointer;
+    padding: 10px 25px;
+}
+main .ordenar-boton a{
+    color:#fff;
+    margin-right:5px;
+    text-decoration:none;
+}
+main .ordenar-boton i{
+    color:#fff;
+    transition:0.3s;
+}
+main .ordenar-boton:hover i{
+    transform:translateX(7px);
+}
+main{
+    background: #f6f6f6;
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #000;
+    color:white;
+    margin-top: 310px;
+    
+}
+footer section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:100px;
+}
+footer section .footer-etiqueta p{
+    color:white;
+}
+footer section .footer-etiqueta{
+   text-align: center;
+}
+footer section .footer-etiqueta h2{
+    margin-bottom:15px;
+    color:#ffbc0e;
+ }
+
+/*ICONOS GRANDES DE REDES SOCIALES*/
+
+footer section .icons-redes a{
+    text-decoration: none;
+    background: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50%;
+}
+footer section .icons-redes a i{
+    font-size: 1.2rem;
+    color:#000;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+footer section .icons-redes a:hover{
+    background: #111;
+    transition: 0.5s;
+}
+footer section .icons-redes a:hover i{
+    color:white;
+    transition: 0.5s;
+}
+/*ICONOS CHICOS DE REDES SOCIALES O LINKS*/
+footer section .icons-redes-peque a{
+    text-decoration: none;
+    background: white;
+    padding: 3px 12px;
+    border-radius: 50%;  
+    width: fit-content;
+    height: fit-content; 
+    margin:5px;
+}
+footer section .icons-redes-peque a i{
+    font-size: 1rem;
+    color:#000;
+    opacity: 0.9;
+    justify-content: center;
+}
+footer section .icons-redes-peque a:hover{
+    background: #111;
+    transition: 0.5s;
+}
+footer section .icons-redes-peque a:hover i{
+    color:white;
+    transition: 0.5s;
+}
+
+.nosotros {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    width: 100px;
+    height: 97px;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    width: 100%;
+    background: #ffffffd2;
+    
+}
+
+h2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+h4 {
+    color: rgb(255, 17, 0);
+    margin-left:5px;
+    margin-right:5px;
+    
+}
